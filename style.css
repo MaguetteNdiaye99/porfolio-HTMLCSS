@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+/* partie hearder */
+header
+{
+    background-image: url(slider-1-1920x1080.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+header .backg-orang{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    
+   
+}
+
+header .backg-orang .sarah-drive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .backg-orang .tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .backg-orang .message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .backg-orang .text, .icon{
+    color: white;
+    font-weight: 700;
+    
+}
+header .backg-orang .icon{
+    font-size: 30px;
+}
+header .backg-orang .text{
+    margin-left: 16px;
+}
+
+section .nom P{
+        color: orange;
+}
+section .adresse {
+    margin-top: 20px;
+}
+
+section .adresse p{
+    margin-top: 10px;
+}
+section .adresse span{
+    font-weight: bold;
+   
+}
+header .button-tele {
+    margin-top: 15px;
+    margin-right: 40px;
+    padding: 10px;
+    background-color: orange;
+    float: right;
+    border-radius: 5px;
+}
+header .button-tele a{
+    color: white;
+}
+header{
+    position: relative;
+
+/* fin de la partie header */
+ 
+}
+section .lunette img{
+   position: relative;
+   bottom: 70px;
+   border-radius: 100%;
+   width: 150px;
+   margin: auto;
+}
+section .backg-white{
+    background-color: white;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    bottom: 250px;
+    z-index: 1;
+}
+section .backg-white .contenue-text{
+    position: relative;
+    
+}
+
+section .bx-icon i{
+    background-color: rgb(54, 53, 53);
+    padding: 10px;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-left: 7px;
+    color: white;
+    font-size: 10px;
+}
+/* section deux */
+.deux progress{
+    width: 50px;
+    height: 10px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar{
+    border-radius: 5px;
+}
+
+::-webkit-progress-value{
+    background-color: orange;
+   border-radius: 10px;
+}
+
+.deux .portfolio{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   
+
+}
+.deux .portfolio .work{
+    margin-left: 70px;
+    margin-top: -20px;
+}
+.deux .portfolio .work h2{
+    font-size: 30px;
+
+}
+.deux .portfolio .work p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.deux .list ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.deux .list ul li{
+    padding-left: 15px;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+}
+@media screen {
+    
+}
+.items-grids{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 10px;
+    height: 100%;
+   
+}
+.items-grids .items-grid{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.items-grid img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+.items-grids .items-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+   
+}
+.items-grid-2 .grid-items{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    
+}
+.grid-items img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.image2{
+    background-color: blueviolet;
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+}
+
+.image7{
+    grid-column: 1/2 ;
+    grid-row: 3/5; 
+}
+.image10{
+    grid-column: 3/4 ;
+    grid-row: 3/5; 
+}
+/* fin de la deuxiem section */
+
+
+/* partie main */
+
+.main{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   
+}
+.right{
+    margin-left: 120px;
+    font-size: 29px;
+    line-height: 43px;
+}
+.right .work p{
+    color: rgb(153, 153, 153);
+}
+.right progress{
+    width: 50px;
+    height: 10px;
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar{
+    border-radius: 5px;
+}
+
+::-webkit-progress-value{
+    background-color: orange;
+   border-radius: 10px;
+}
+.para{
+    width: 700px;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: "Poppins,"serif;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+   margin-left: 70px;
+}
+.para .matiere{
+    margin-top: 50px;
+}
+.matiere{
+    display: flex;
+    gap: 30px;
+   
+   
+}
+.html{
+   text-align: center;
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 100%;
+}
+
+.color-violer{
+    background-color: rgb(133, 10, 133);
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.left .studio{
+    margin-bottom: 15px;
+}
+.left .march{
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+}
+
+/* fin de la partie main */
