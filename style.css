@@ -8,7 +8,7 @@
 header
 {
     background-image: url(slider-1-1920x1080.jpg);
-    width: 100%;
+    /* width: 100%; */
     height: 500px;
     background-size: cover;
 }
@@ -29,19 +29,19 @@ header .backg-orang{
 
 header .backg-orang .sarah-drive{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     
 }
 header .backg-orang .tel{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 header .backg-orang .message{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 header .backg-orang .text, .icon{
     color: white;
@@ -82,10 +82,29 @@ header .button-tele a{
 }
 header{
     position: relative;
+}
+@media screen and (max-width: 620px){
+    header .backg-orang{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: orange;
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+        /* width: 80%; */
+        /* margin: auto; */
+        height: 150px;
+        /* padding: 15px; */
+        border-radius: 5px;
+        
+       
+    }
+   
+}
 
 /* fin de la partie header */
  
-}
+
 section .lunette img{
    position: relative;
    bottom: 70px;
@@ -116,6 +135,18 @@ section .bx-icon i{
     margin-left: 7px;
     color: white;
     font-size: 10px;
+}
+@media screen and (max-width: 620px){
+    section .backg-white{
+        background-color: white;
+        text-align: center;
+        width: 400px;
+        height: 500px;
+        margin: auto;
+        position: relative;
+        bottom: 250px;
+        z-index: 1;
+    }
 }
 /* section deux */
 .deux progress{
@@ -157,14 +188,38 @@ section .bx-icon i{
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    margin-top: 25px;
+}
+.deux .list ul .l1{
+    color: orange;
 }
 .deux .list ul li{
     padding-left: 15px;
     text-transform: uppercase;
-    /* font-weight: 600; */
+    font-weight: 600;
 }
-@media screen {
+.deux .list ul li:hover{
+    color: orange;
+}
+@media screen and (max-width: 620px){
+    .deux progress{
+        width: 50px;
+        height: 10px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+        -webkit-appearance: none;
+    }
+    .deux .portfolio{
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+       
     
+    }
+    .deux .portfolio .work{
+        margin-left: 15px;
+        margin-top: -20px;
+    }
 }
 .items-grids{
     margin-top: 50px;
@@ -172,7 +227,9 @@ section .bx-icon i{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 300px);
     gap: 10px;
-    height: 100%;
+    /* grid-auto-flow: column; */
+    /* grid-auto-flow: dense; */
+    /* height: 100%; */
    
 }
 .items-grids .items-grid{
@@ -219,6 +276,16 @@ section .bx-icon i{
     grid-column: 3/4 ;
     grid-row: 3/5; 
 }
+@media screen and (max-width: 620px){
+  .items-grids{
+     grid-template-columns: 1fr;
+     grid-template-rows: 600px;
+
+   
+}
+  
+}
+
 /* fin de la deuxiem section */
 
 
@@ -228,6 +295,9 @@ section .bx-icon i{
     margin-top: 140px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    /* display: flex;
+    flex-wrap: wrap; */
+    
    
 }
 .right{
@@ -252,8 +322,23 @@ section .bx-icon i{
     background-color: orange;
    border-radius: 10px;
 }
+@media screen and (max-width: 620px){
+    .main{
+        margin-top: 140px;
+        /* display: grid; */
+        /* grid-template-columns: 1fr 2fr; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .right{
+        /* margin-left: 120px; */
+        font-size: 29px;
+        line-height: 43px;
+    }
+    
+}
 .para{
-    width: 700px;
+    /* width: 700px; */
     font-size: 17px;
     line-height: 27px;
     font-family: "Poppins,"serif;
@@ -270,6 +355,77 @@ section .bx-icon i{
    
    
 }
+.row{
+    margin-top: 30px;
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.row .col .skill{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px white;
+}
+.row .col:nth-child(1) .skill{
+    background: conic-gradient(#ffba08 97%, transparent 0);
+}
+.row .col:nth-child(2) .skill{
+    background: conic-gradient(#ffba08 78%, transparent 0);
+}
+.row .col:nth-child(3) .skill{
+    background: conic-gradient(#ffba08 65%, transparent 0);
+}
+.row .col:nth-child(4) .skill{
+    background: conic-gradient(#ffba08 97%, transparent 0);
+}
+.row .col .skill::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: white;
+    border-radius: 50%;
+    /* box-shadow: 5px 5px 10px white inset; */
+}
+.row .col .skill .content{
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    /* user-select: none; */
+}
+.row .col .skill .content span{
+    display: block;
+    padding: 5px 0;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 620px){
+    .row{
+        margin-top: 30px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .row .col .skill{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 3px 3px 10px white;
+    }
+}
 .html{
    text-align: center;
     padding: 15px;
@@ -282,13 +438,157 @@ section .bx-icon i{
     margin-top: 140px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    color: white;
+}
+.left{
+    margin-left: 15px;
+}
+.right .work h2{
+    font-size: 25px;
+}
+.right .work p{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.left h1{
+    font-size: 23px;
 }
 .left .studio{
-    margin-bottom: 15px;
+    color: orange;
+    font-size: 15px;
+    margin-bottom: 25px;
 }
 .left .march{
-    /* margin-top: 10px; */
+    margin-bottom: 30px;
+}
+
+.left ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.left ul li{
+    margin-top: 10px;
+}
+.web h1{
+    font-size: 23px;
+    
+}
+.web .ds{
+    color: orange;
+    font-size: 15px;
     margin-bottom: 20px;
+}
+.web .april{
+    margin-bottom: 30px;
+}
+.color-white .web h1{
+    margin-top: 20px;
+}
+.color-white .web .april{
+    font-size: 20px;
+    color: gainsboro;
+}
+.color-white .left .march{
+    font-size: 20px;
+    color: gainsboro;
 }
 
 /* fin de la partie main */
+@media screen and (max-width: 620px){
+    .color-violer{
+        background-color: rgb(133, 10, 133);
+        margin-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left h1{
+        font-size: 20px;
+    }
+    .web h1{
+        font-size: 15px;
+        
+    }
+    .color-white .left .march{
+        font-size: 12px;
+        color: gainsboro;
+    }
+    .color-white .web .april{
+        font-size: 12px;
+        color: gainsboro;
+    }
+    
+}
+
+.color-white{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 620px){
+    .color-white{
+        margin-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+}
+
+.suffre{
+    background: url(slider-2-1920x600.jpg);
+    background-size: cover;
+    height: 250px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.suffre .coder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.suffre .coder span{
+    font-size: 70px;
+    color: white;
+    margin: 10px;
+    font-weight: 700;
+}
+.suffre .coder p{
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 620px){
+    .suffre{
+        display:flex;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .suffre .coder span{
+        font-size: 50px;
+    }
+    .suffre .coder p{
+        font-size: 10px;
+        
+    }
+   
+}
+
+footer{
+    background-color: blueviolet;
+    font-size: 15px;
+    height: 90px;
+    text-align: center;
+   
+}
+footer p{
+    padding-top: 30px;
+    color: rgb(56, 55, 55);
+}
